@@ -1,47 +1,51 @@
-.right-side {
-    width: 67%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 0 5px 0 10px;
-}
-
-.right-side .section {
+.objective,
+.education,
+.work-experience {
     display: flex;
     flex-direction: column;
     text-align: start;
     font-size: 13px;
 }
 
-.right-side .section h1 {
+.objective h1,
+.education h1,
+.work-experience h1 {
     font-size: 21px;
     font-weight: 520;
     margin:0 0 5px 0;
     font-family: "Didot";
 }
 
-.right-side .section .content {
+.objective > section,
+.education > section,
+.work-experience > section {
     display: grid;
     gap: 0px;
     margin-bottom: 10px;
 }
 
-.right-side .section .content .period {
+.objective .period,
+.education .period,
+.work-experience .period {
     white-space: nowrap;
     font-weight: 500;
 }
 
-.right-side .section .content .detail h2{
+.objective section article h2,
+.education section article h2,
+.work-experience article h2{
     font-size: 14px;
     margin: 0;
 }
 
-.right-side .section .content .detail p{
+.objective article p,
+.education article p,
+.work-experience article p{
     color: black;
     margin: 0;
 }
 
-.right-side .section .content .detail .sub-detail{
+.education article .description{
     color: #5d5d5d;
     margin: 0;
 }

@@ -1,4 +1,3 @@
-import './App.css';
 import Curriculum from './pages/Curriculum';
 
 function App() {

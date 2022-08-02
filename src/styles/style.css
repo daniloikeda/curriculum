@@ -5,12 +5,6 @@
     width: 21cm;
 }
 
-.regular-text {
-    font-size: 15px;
-    font-weight: 100;
-}
-
-
 .grid-columns-2 {
     grid-template-columns: 17% 83%;
 }
@@ -22,13 +16,14 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 80px;
 }
 
-.professional-skills {
+.right-side {
+    width: 67%;
     display: flex;
     flex-direction: column;
-    margin-left: 12px;
-    gap: 70px
+    justify-content: space-evenly;
+    margin: 0 5px 0 10px;
 }

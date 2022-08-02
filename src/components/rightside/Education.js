@@ -1,19 +1,24 @@
-import React, { Component } from 'react';
+import React from "react";
 
-function Education ({education}) {
-    return(
-    <div className='section'>
-        <h1 className='title'>Education</h1>        
-        {education && education.map((e, index) => 
-            <div key={index} className="content grid-columns-2">
-                <div className="period">{e.from + "-" + e.to}</div>
-                <div className="detail">
-                    <h2>{e.location}</h2>
-                    <p>{e.role}</p>
-                    {e.description && <p className='sub-detail'>{e.description}</p>}
-                </div>
-            </div>)}
-    </div>);
+function Education({ education }) {
+  return (
+    <section className="education">
+      <h1>Education</h1>
+      {education &&
+        education.map((e, index) => (
+          <section key={index} className="institution grid-columns-2">
+            <div>
+              <span className="period">{e.from + "-" + e.to}</span>
+            </div>
+            <article>
+              <h2>{e.location}</h2>
+              <p>{e.role}</p>
+              {e.description && <p className="description">{e.description}</p>}
+            </article>
+          </section>
+        ))}
+    </section>
+  );
 }
 
 export default Education;

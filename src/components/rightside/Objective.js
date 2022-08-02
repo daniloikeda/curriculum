@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 function Objective ({objective}) {
     return(
-    <div className='section'>
-        <h1 className='title'>Objective</h1>
-        <div className='content'>
-            <p style={{margin: 0}}>{objective}</p>
-        </div>
-    </div>);
+    <section className="objective">
+        <h1>Objective</h1>
+        <p style={{margin: 0}}>{objective}</p>
+    </section>);
 }
 
 export default Objective;

@@ -1,3 +1,19 @@
+.professional-skills {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    gap: 70px
+}
+
+.left-side > header {
+    text-align: center;
+}
+
+.contact p {
+    font-size: 15px;
+    font-weight: 100;
+}
+
 .skills, 
 .others, 
 .language, 
