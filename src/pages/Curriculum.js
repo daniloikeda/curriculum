@@ -10,30 +10,32 @@ import userData from "../services/data-english";
 import Objective from "../components/rightside/Objective";
 import Education from "../components/rightside/Education";
 import WorkExperience from "../components/rightside/WorkExperience";
-import "./Curriculum.css";
 import "../styles/style.css";
+import "../styles/leftside.css";
+import "../styles/rightside.css";
 
-function Curriculum({props}) {
-    return(
-        <div className="page page-size page-border">
-            <div className="left-side">
-                <div>
+const Curriculum = () =>
+    <main>
+        <div className="curriculum-page">
+            <section className="left-side">
+                <header>
                     <Name {...userData}></Name>
                     <Job {...userData}></Job>
-                </div>
-                <Contact {...userData.contact}></Contact>
-                <Skills {...userData}></Skills>
-                <Others {...userData}></Others>
-                <Language {...userData}></Language>
-                <Certification {...userData}></Certification>
-            </div>
-            <div className="right-side">
+                    <Contact {...userData.contact}></Contact>
+                </header>
+                <section className="professional-skills">
+                    <Skills {...userData}></Skills>
+                    <Others {...userData}></Others>
+                    <Language {...userData}></Language>
+                    <Certification {...userData}></Certification>
+                </section>
+            </section>
+            <section className="right-side">
                 <Objective {...userData}></Objective>
                 <Education {...userData}></Education>
                 <WorkExperience {...userData}></WorkExperience>
-            </div>
+            </section>
         </div>
-    );
-}
+    </main>
 
 export default Curriculum;

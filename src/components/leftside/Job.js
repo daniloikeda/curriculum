@@ -1,7 +1,7 @@
 import React from "react";
 
 const Job = ({jobDescription}) => {
-    return <span className="regular-text" style={{fontWeight: 400}}>{jobDescription}</span>
+    return <p className="regular-text" style={{fontWeight: 400}}>{jobDescription}</p>
 }
 
 export default Job;

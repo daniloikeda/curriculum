@@ -2,12 +2,12 @@ import React from "react";
 
 function Others({others}) {
     return(
-        <div className="section">
-            <h1 className="title">Others</h1>
-            <div className="section-list column-quantity-2">
+        <section className="others">
+            <h1>Others</h1>
+            <article className="grid-column-quantity-2">
                 {others.map((_, index) => <span key={index}>{_}</span>)}        
-            </div>
-        </div>
+            </article>
+        </section>
     )
 }
 

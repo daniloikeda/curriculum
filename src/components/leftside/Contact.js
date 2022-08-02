@@ -3,11 +3,11 @@ import "./Contact.css";
 
 const Contact = ({phoneNumber, email, address}) => {
     return (
-        <div className="contact">
-            <span className="regular-text">{phoneNumber}</span>
-            <span className="regular-text">{email}</span>
-            <span className="regular-text">{address}</span>
-        </div>
+        <section className="contact">
+            <p className="regular-text">{phoneNumber}</p>
+            <p className="regular-text">{email}</p>
+            <p className="regular-text">{address}</p>
+        </section>
     );
 }
 

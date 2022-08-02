@@ -1,19 +1,23 @@
-.page {
+.curriculum-page {
     display: flex;
     font-family: "Segoe UI";
-}
-
-.page-size {
     height: 29.7cm;
     width: 21cm;
 }
 
-.page-border {
-    /* border: 1px solid black; */
+.regular-text {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+.grid-columns-2 {
+    grid-template-columns: 17% 83%;
 }
 
 .left-side {
     width: 33%;
+    padding-top: 30px;
     background-color: #303d4f;
     color: white;
     display: flex;
@@ -22,97 +26,9 @@
     gap: 80px;
 }
 
-.right-side {
-    width: 67%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 0 5px 0 10px;
-}
-
-.title {
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.regular-text {
-    font-size: 15px;
-    font-weight: 100;
-}
-
-.left-side .section {
+.professional-skills {
     display: flex;
     flex-direction: column;
     margin-left: 12px;
-}
-
-.left-side .section .title {
-    font-size: 20px;
-    text-align: start;
-    margin: 0 0 5px 5px;
-}
-
-.left-side .section .section-list {
-    display: grid;
-    justify-items: start;
-    margin: 0 5px 0 5px;
-}
-
-.left-side .section-list .column-quantity-1 {    
-    grid-template-columns: 100%;
-}
-
-.left-side .section .column-quantity-2 {    
-    grid-template-columns: 50% 50%;
-}
-
-.left-side .section .section-list span {
-    color: white;
-    font-size: 15px;
-    text-align: start;
-    font-weight: 300;
-}
-
-.right-side .section {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    font-size: 13px;
-}
-
-.right-side .section h1 {
-    font-size: 21px;
-    font-weight: 520;
-    margin:0 0 5px 0;
-    font-family: "Didot";
-}
-
-.right-side .section .content {
-    display: grid;
-    gap: 0px;
-    margin-bottom: 10px;
-}
-
-.grid-columns-2 {
-    grid-template-columns: 17% 83%;
-}
-
-.right-side .section .content .period {
-    white-space: nowrap;
-    font-weight: 500;
-}
-
-.right-side .section .content .detail h2{
-    font-size: 14px;
-    margin: 0;
-}
-
-.right-side .section .content .detail p{
-    color: black;
-    margin: 0;
-}
-
-.right-side .section .content .detail .sub-detail{
-    color: #5d5d5d;
-    margin: 0;
+    gap: 70px
 }

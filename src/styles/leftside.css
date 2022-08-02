@@ -1,0 +1,42 @@
+.skills, 
+.others, 
+.language, 
+.certification {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.skills h1,
+.others h1,
+.language h1,
+.certification h1 {
+    font-size: 20px;
+    text-align: start;
+    margin: 0 0 5px 0;
+}
+
+.skills article,
+.others article,
+.language article,
+.certification article {
+    display: grid;
+    justify-items: start;
+}
+.skills article span,
+.others article span,
+.language article span,
+.certification article span {
+    color: white;
+    font-size: 15px;
+    text-align: start;
+    font-weight: 300;
+}
+
+.grid-column-quantity-1 {    
+    grid-template-columns: 100%;
+}
+
+.grid-column-quantity-2 {    
+    grid-template-columns: 50% 50%;
+}
